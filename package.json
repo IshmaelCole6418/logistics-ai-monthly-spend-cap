@@ -1,0 +1,21 @@
+{
+  "name": "logistics-ai-monthly-spend-cap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/shipment_service.ts",
+    "cap": "tsx src/configure_monthly_cap.ts",
+    "test": "tsx --test test/shipment_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
